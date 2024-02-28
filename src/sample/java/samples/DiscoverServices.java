@@ -21,6 +21,7 @@ package samples;
 import java.io.IOException;
 import java.util.logging.ConsoleHandler;
 import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.jmdns.JmDNS;
 import javax.jmdns.ServiceEvent;
@@ -63,10 +64,10 @@ public class DiscoverServices {
             boolean log = false;
             if (log) {
                 Logger logger = LoggerFactory.getLogger(JmDNS.class);
-                ConsoleHandler handler = new ConsoleHandler();
-                logger.addHandler(handler);
-                logger.setLevel(Level.FINER);
-                handler.setLevel(Level.FINER);
+//                ConsoleHandler handler = new ConsoleHandler();
+//                logger.addHandler(handler);
+//                logger.setLevel(Level.FINER);
+//                handler.setLevel(Level.FINER);
             }
 
             final JmDNS jmdns = JmDNS.create();

@@ -21,8 +21,10 @@ package samples;
 import java.io.IOException;
 import java.util.Enumeration;
 import java.util.logging.ConsoleHandler;
+import java.util.logging.Level;
 import java.util.logging.LogManager;
 import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.jmdns.JmDNS;
 
@@ -48,8 +50,8 @@ public class OpenJmDNS {
                 for (Enumeration<String> enumerator = LogManager.getLogManager().getLoggerNames(); enumerator.hasMoreElements();) {
                     String loggerName = enumerator.nextElement();
                     Logger logger = LoggerFactory.getLogger(loggerName);
-                    logger.addHandler(handler);
-                    logger.setLevel(Level.FINEST);
+//                    logger.addHandler(handler);
+//                    logger.setLevel(Level.FINEST);
                 }
             }
 

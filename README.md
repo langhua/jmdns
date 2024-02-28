@@ -1,3 +1,18 @@
+This fork enables sample GUI.
+
+1. Run jmdns:
+
+![jmdns-brower-exec](./jmdns-browser-exec.png)
+
+2. View mdns in JmDNS Browser:
+
+![jmdns-brower](./jmdns-browser.png)
+
+
+The following line below is jmdns original readme:
+
+---
+
 ![build status](https://travis-ci.org/jmdns/jmdns.svg)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.jmdns/jmdns/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.jmdns/jmdns)
 [![Javadocs](http://www.javadoc.io/badge/org.jmdns/jmdns.svg)](http://www.javadoc.io/doc/org.jmdns/jmdns)

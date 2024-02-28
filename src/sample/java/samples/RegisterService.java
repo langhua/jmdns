@@ -23,8 +23,10 @@ import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Random;
 import java.util.logging.ConsoleHandler;
+import java.util.logging.Level;
 import java.util.logging.LogManager;
 import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.jmdns.JmDNS;
 import javax.jmdns.ServiceInfo;
@@ -70,9 +72,9 @@ public class RegisterService {
             handler.setLevel(Level.FINEST);
             for (Enumeration<String> enumerator = LogManager.getLogManager().getLoggerNames(); enumerator.hasMoreElements();) {
                 String loggerName = enumerator.nextElement();
-                Logger logger = LoggerFactory.getLogger(loggerName);
-                logger.addHandler(handler);
-                logger.setLevel(Level.FINEST);
+//                Logger logger = LoggerFactory.getLogger(loggerName);
+//                logger.addHandler(handler);
+//                logger.setLevel(Level.FINEST);
             }
         }
 
